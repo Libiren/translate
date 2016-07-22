@@ -80,7 +80,6 @@ public class MainActivity extends AppCompatActivity {
                     request = request.replace(" ", "+");
                     mapJson.put("text", request);
 
-
                     Call<Object> call = intf.translate(mapJson);
                     StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
                     StrictMode.setThreadPolicy(policy);
@@ -133,6 +132,4 @@ public class MainActivity extends AppCompatActivity {
         });
 //        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
-
-
 }
