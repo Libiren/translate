@@ -2,6 +2,7 @@
     <string name="app_name">My Application</string>
     <string name="en">EN</string>
     <string name="ru">RU</string>
-    <string name="translate">Перевод</string>
+    <string name="translate">Translated text</string>
     <string name="type_your_text_here">Type your text here</string>
+
 </resources>
