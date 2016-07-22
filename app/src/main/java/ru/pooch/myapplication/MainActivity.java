@@ -1,4 +1,5 @@
 package ru.pooch.myapplication;
+
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
@@ -28,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView engText;
     private boolean language = true;
     Map<String, String> mapJson = new HashMap<>();
-    private ImageButton changeBtn;
+    private ImageButton mImageButtomChangeLanguage;
     private final String KEY = "trnsl.1.1.20160530T163721Z.46212086c960f3a8.b52ad3378730521c12680e290eba0d085ba50181";
     private final String URL = "https://translate.yandex.net";
 
@@ -46,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         rusText = (TextView) findViewById(R.id.textRu);
         engText = (TextView) findViewById(R.id.textEn);
         mTranslatedText = (TextView) findViewById(R.id.textView);
-        changeBtn = (ImageButton) findViewById(R.id.buttonChange);
+        mImageButtomChangeLanguage = (ImageButton) findViewById(R.id.buttonChange);
         mapJson.put("lang", "ru-en");
 
         text.setOnClickListener(new View.OnClickListener() {
@@ -89,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        changeBtn.setOnClickListener(new View.OnClickListener() {
+        mImageButtomChangeLanguage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (!language) {
